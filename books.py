@@ -11,7 +11,7 @@ col = db.get_collection('GENERO-TERROR')
 driver = webdriver.Chrome()
 #Abrir la página web
 driver.get("https://www.librimundi.com/")
-time.sleep(3)
+time.sleep(4)
 #Buscamos la barra search para poder escribir nuestra búsqueda
 search_book= driver.find_element(By.XPATH, '//*[@id="buscador"]')
 search_book.send_keys('terror')
